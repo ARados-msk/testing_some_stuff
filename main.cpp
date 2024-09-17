@@ -1,7 +1,10 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
 int main(){
-  cout << "Hello wordld!";
+  fstream file("New_file.txt");
+  file.seekp(3);
+  file << "Hello world!";
 }
